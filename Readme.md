@@ -16,5 +16,5 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 Untuk memperbaiki ssl dan squid (lakukan pergantian domain terlebih dahulu)
 
   ```html
-apt reinstall stunnel -y && apt reinstall stunnel4 -y && apt reinstall squid -y && apt reinstall shadowsocks -y && apt reinstall squid3
+apt reinstall stunnel -y && apt reinstall stunnel4 -y && apt reinstall shadowsocks -y && apt reinstall stunnel4 -y && apt reinstall squid -y && apt reinstall shadowsocks-libev
 ``` 
