@@ -25,7 +25,7 @@ fi
 # Mod By SL
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ssh"
+akbarvpn="raw.githubusercontent.com/miftah06/Mantap-main/master/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
