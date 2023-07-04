@@ -38,11 +38,11 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 #sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 #subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 # shellcheck disable=SC1007
-DOMAIN= echo -n "Enter Your Domain: "
+DOMAIN= echo -n "Enter Your Domain ex:indo.qql.icu: "
 read DOMAIN
-SUB_DOMAIN=$ echo -n "Enter Your Host/subdomain: "
+SUB_DOMAIN=$ echo -n "Enter Your Host/subdomain again: "
             read SUB_DOMAIN
-NS_DOMAIN=$ echo -n "Enter Your SLOWDNSHOST/Sub in subdomain: "
+NS_DOMAIN=$ echo -n "Enter Your SLOWDNSHOST/Sub in subdomain ex:dns.indo.qqgl.cu: "
               read NS_DOMAIN
 CF_ID=izharuddinmiftah@gmail.com
 CF_KEY=3292a1a8e44719e55d1af536eab5d4700be26
