@@ -19,11 +19,31 @@ mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 #
+# Getting
+clear
+echo start
+sleep 0.5
+source /var/lib/crot/ipvps.conf
+domain=$(cat /etc/xray/domain)
+sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
+cd /root/
+wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
+bash acme.sh --install
+rm acme.sh
+cd .acme.sh
+echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
+bash acme.sh --register-account -m izharuddinmiftah@gmail.com
+bash acme.sh --issue --standalone -d $domain --force
+bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=tekno.gq
-SUB_DOMAIN=${sub}.www.tekno.gq
-NS_DOMAIN=si-${sub}.jago.tekno.gq
+# shellcheck disable=SC1007
+DOMAIN= echo -n "Enter Your Domain: "
+read DOMAIN
+SUB_DOMAIN=$ echo -n "Enter Your Host/subdomain: "
+            read SUB_DOMAIN
+NS_DOMAIN=$ echo -n "Enter Your SLOWDNSHOST/Sub in subdomain: "
+              read NS_DOMAIN
 CF_ID=izharuddinmiftah@gmail.com
 CF_KEY=3292a1a8e44719e55d1af536eab5d4700be26
 set -euo pipefail
