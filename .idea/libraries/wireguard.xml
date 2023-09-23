@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wireguard">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/wireguard/wireguard.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
