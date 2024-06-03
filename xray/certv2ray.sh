@@ -23,6 +23,24 @@ bash acme.sh --install
 rm acme.sh
 cd .acme.sh
 echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
-acme.sh --register-account --server https://acme-v02.api.letsencrypt.org/directory --email izharuddinmiftah@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
+#!/bin/bash
+
+# Install acme.sh if not already installed
+curl https://get.acme.sh | sh
+
+# Initialize acme.sh in the current session
+source ~/.bashrc
+
+# Prompt user for email and domain
+read -p "Enter your email address for registration: " email
+read -p "Enter your domain name: " domain
+
+# Register account with ZeroSSL
+acme.sh --register-account --server https://acme.zerossl.com/v2/DV90 --email $email
+
+# Issue certificate for your domain
+acme.sh --issue --standalone -d $domain
+
+# Install certificate
 bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
+echo "Certificate installation completed for $domain."
