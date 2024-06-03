@@ -39,7 +39,7 @@ read -p "Enter your domain name: " domain
 acme.sh --register-account --server https://acme.zerossl.com/v2/DV90 --email $email
 
 # Issue certificate for your domain
-acme.sh --issue --standalone -d $domain
+acme.sh --issue --standalone -d $domain --force
 
 # Install certificate
 bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
