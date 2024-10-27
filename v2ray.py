@@ -9,7 +9,7 @@ def generate_account_details(inisial):
     password = "123"  # Fixed password
     return username, password
 
-def create_vpn_account(script, inisial):
+def create_vpn_account(command, inisial):
     """Create a VPN account by running the specified script with generated details."""
     username, password = generate_account_details(inisial)
     quota = 8  # Define quota in GB
