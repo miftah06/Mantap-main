@@ -1,0 +1,8 @@
+item_id,price,command,tunnel,user_id,saldo,konten,status
+ssh,15000, python3 ssh.py "bash ssh.sh" miftah,SSH,867977312,100,VPN SSH 30DAY Premium,Available
+vmess,15000, python3 v2ray.py "bash vmess.sh" miftah,SSH,867977312,100,VPN VMESS 30DAY Premium,Available
+vless,15000, python3 v2ray.py "bash vless.sh" miftah,SSH,867977312,100,VPN VLESS 30DAY Premium,Available
+trojan,15000, python3 trojan.py "bash trojan.sh" miftah,SSH,867977312,100,VPN TROJAN 30DAY Premium,Available
+ssws,15000, python3 ssh.py "bash ssws.sh" miftah,SSH,867977312,100,VPN SSWS 30DAY Premium,Available
+trial-ssh,1, python3 ssh2.py "bash ssh.sh" miftah,SSH,867977312,100,VPN SSH Trial Premium,Available
+trial-v2ray,1, python3 v2ray2.py "bash vmess.sh" miftah,SSH,867977312,100,VPN V2RAY Trial Premium,Available

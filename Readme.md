@@ -18,3 +18,11 @@ Untuk memperbaiki ssl dan squid (lakukan pergantian domain terlebih dahulu)
   ```html
 apt reinstall stunnel -y && apt reinstall stunnel4 -y && apt reinstall shadowsocks -y && apt reinstall stunnel4 -y && apt reinstall squid -y && apt reinstall shadowsocks-libev
 ``` 
+
+### Update BOT
+
+Untuk memasang bot pada akun bot telegram di https://t.me/BotFather
+
+  ```bash
+python3 bot.py
+``` 
